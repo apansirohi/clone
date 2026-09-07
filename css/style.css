@@ -1,7 +1,6 @@
 :root {
-  --blue-dark: #1f4278;
-  --blue: #1d4d9b;
-  --blue-light: #61abe8;
+  --blue-dark: #244a82;
+  --blue-light: #3b9bd8;
   --gold: #f5c400;
   --page-bg: #f4f4f4;
   --card: #ffffff;
@@ -289,7 +288,7 @@ body {
   cursor: pointer;
   text-align: left;
   color: #161616;
-  background: linear-gradient(90deg, var(--blue) 0%, var(--blue-light) 48%, var(--blue-dark) 100%);
+  background: linear-gradient(90deg, var(--blue-dark) 0%, var(--blue-light) 50%, var(--blue-dark) 100%);
 }
 
 .accordion__trigger:hover {
