@@ -1,6 +1,6 @@
 :root {
   --blue-dark: #244a82;
-  --blue-light: #3b9bd8;
+  --blue-light: #2b82c8;
   --gold: #f5c400;
   --page-bg: #f4f4f4;
   --card: #ffffff;
@@ -268,7 +268,7 @@ body {
   margin-top: 34px;
   display: flex;
   flex-direction: column;
-  gap: 52px;
+  gap: 36px;
 }
 
 .accordion__item {
@@ -370,7 +370,7 @@ body {
 
 /* ---------- RESPONSIVE ---------- */
 
-@media (max-width: 900px) {
+@media (max-width: 640px) {
   .top-actions {
     display: none;
   }
