@@ -184,6 +184,11 @@ body {
   width: calc(100% - 43px);
   margin-left: 43px;
   padding: 31px 2.8% 60px;
+
+  background: #ffffff;
+  min-height: calc(100vh - 58px);
+
+  border-radius: 0;
 }
 
 /* ---------- PROFILE ---------- */
@@ -341,6 +346,7 @@ body {
   border-collapse: collapse;
   table-layout: fixed;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .info-table td {
@@ -420,6 +426,8 @@ body {
     width: calc(100% - 38px);
     margin-left: 38px;
     padding: 18px 10px 40px;
+    background: #ffffff;
+    min-height: calc(100vh - 58px);
   }
 
   .profile-card {
