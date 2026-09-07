@@ -1,121 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>APSA — Student Profile</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VIT BHOPAL - VTOP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+  <!-- Top navigation -->
   <header class="topbar">
-    <div class="topbar__brand">
-      <span class="topbar__mark">A</span>
-      <span class="topbar__name">APSA</span>
+    <div class="topbar__left">
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <div class="brand">
+        <span class="brand__name">VIT</span>
+        <span class="brand__campus">Bhopal Campus</span>
+      </div>
+
+      <div class="top-actions">
+        <button aria-label="Home">⌂</button>
+        <button aria-label="Print">▣</button>
+        <button aria-label="Favorites">★</button>
+        <button class="quick-links">Quick Links <span>▾</span></button>
+      </div>
     </div>
-    <nav class="topbar__nav">
-      <a href="#" class="active">Profile</a>
-      <a href="#">Attendance</a>
-      <a href="#">Grades</a>
-      <a href="#">Timetable</a>
-    </nav>
+
     <div class="topbar__user">
-      <span>Demo Student</span>
-      <button class="btn-logout">Log out</button>
+      <div class="user-avatar">
+  <img src="assets/me.jpeg" alt="Student photo">
+</div>
+      <span>23BCE10832 (STUDENT)</span>
+      <span class="user-chevron">▾</span>
     </div>
   </header>
 
+  <!-- Left sidebar -->
+  <aside class="sidebar" aria-label="Portal navigation">
+    <button title="Contact">☎</button>
+    <button title="Services">▣</button>
+    <button title="Information">ⓘ</button>
+    <button title="Family">♣</button>
+    <button title="Education">🎓</button>
+    <button title="Institution">▥</button>
+    <button title="Documents">▤</button>
+    <button title="Travel">➤</button>
+    <button title="Settings">⚙</button>
+    <button title="Payments">▣</button>
+    <button title="Home">⌂</button>
+    <button title="Security">▢</button>
+  </aside>
+
   <main class="page">
 
+    <!-- Student profile -->
     <section class="profile-card">
-      <div class="profile-card__photo">
+      <div class="profile-photo-area">
         <div class="avatar-placeholder">
-          <svg viewBox="0 0 100 100" aria-hidden="true">
-            <circle cx="50" cy="36" r="18"/>
-            <path d="M15 90c3-22 18-34 35-34s32 12 35 34"/>
-          </svg>
-        </div>
-        <p class="profile-card__name">STUDENT NAME</p>
+       <img src="assets/me.jpeg" alt="Student photo">
       </div>
 
-      <div class="profile-card__details">
-        <div class="detail-grid">
-          <div class="detail">
-            <span class="detail__label">Register Number</span>
-            <span class="detail__value">00XXX00000</span>
-          </div>
-          <div class="detail">
-            <span class="detail__label">APSA Email</span>
-            <span class="detail__value">student.id@apsa.edu</span>
-          </div>
-          <div class="detail">
-            <span class="detail__label">Program &amp; Branch</span>
-            <span class="detail__value">B.Tech — Computer Science &amp; Engineering</span>
-          </div>
-          <div class="detail">
-            <span class="detail__label">School Name</span>
-            <span class="detail__value">School of Computing Sciences</span>
-          </div>
+        <div class="student-name">APAN SIROHI</div>
+      </div>
+
+      <div class="profile-details">
+        <div class="detail">
+          <span class="detail__label">Register Number:</span>
+          <span class="detail__value">23BCE10832</span>
+        </div>
+
+        <div class="detail">
+          <span class="detail__label">VIT Email:</span>
+          <span class="detail__value">apan.23bce10832@vitbhopal.ac.in</span>
+        </div>
+
+        <div class="detail">
+          <span class="detail__label">Program &amp; Branch:</span>
+          <span class="detail__value">B.Tech - Computer Science and Engineering</span>
+        </div>
+
+        <div class="detail">
+          <span class="detail__label">School Name:</span>
+          <span class="detail__value">School of Computing Science and Engineering (SCOPE)</span>
         </div>
       </div>
     </section>
 
+    <!-- Information sections -->
     <section class="accordion" id="accordion">
 
+      <!-- Personal -->
       <div class="accordion__item">
         <button class="accordion__trigger" aria-expanded="false" aria-controls="panel-personal">
-          <span class="accordion__icon accordion__icon--personal"></span>
-          <span>Personal Information</span>
-          <span class="accordion__chevron">&#9662;</span>
+          <span class="section-icon">▣</span>
+          <span class="section-title">PERSONAL INFORMATION</span>
+          <span class="accordion__chevron">⌄</span>
         </button>
+
         <div class="accordion__panel" id="panel-personal" hidden>
           <table class="info-table">
             <tbody>
-              <tr><td class="info-table__key">Application Number</td><td>XXXXXXXXXX</td></tr>
-              <tr><td class="info-table__key">Date of Birth</td><td>DD-MMM-YYYY</td></tr>
-              <tr><td class="info-table__key">Gender</td><td>—</td></tr>
-              <tr><td class="info-table__key">Blood Group</td><td>—</td></tr>
-              <tr><td class="info-table__key">Nationality</td><td>—</td></tr>
-              <tr><td class="info-table__key">Hosteller / Day Scholar</td><td>—</td></tr>
-              <tr><td class="info-table__key">Mobile Number</td><td>+91 XXXXXXXXXX</td></tr>
+              <tr><td class="info-table__key">Application Number</td><td>23BCE10832</td></tr>
+              <tr><td class="info-table__key">Date of Birth</td><td>06-10-2005</td></tr>
+              <tr><td class="info-table__key">Gender</td><td>MALE</td></tr>
+              <tr><td class="info-table__key">Blood Group</td><td>AB+</td></tr>
+              <tr><td class="info-table__key">Nationality</td><td>INDIAN</td></tr>
+              <tr><td class="info-table__key">Hosteller / Day Scholar</td><td>HOSTELLER</td></tr>
+              <tr><td class="info-table__key">Mobile Number</td><td>+91 9837400622</td></tr>
               <tr class="info-table__section"><td colspan="2">Current Address</td></tr>
-              <tr><td class="info-table__key">Street</td><td>—</td></tr>
-              <tr><td class="info-table__key">City</td><td>—</td></tr>
-              <tr><td class="info-table__key">State</td><td>—</td></tr>
-              <tr><td class="info-table__key">Country</td><td>—</td></tr>
-              <tr><td class="info-table__key">Pincode</td><td>—</td></tr>
-              <tr><td class="info-table__key">Email</td><td>personal.email@example.com</td></tr>
+              <tr><td class="info-table__key">Street</td><td>B-35, SURYA NAGAR</td></tr>
+              <tr><td class="info-table__key">City</td><td>MEERUT</td></tr>
+              <tr><td class="info-table__key">State</td><td>UTTAR PRADESH</td></tr>
+              <tr><td class="info-table__key">Country</td><td>INDIA</td></tr>
+              <tr><td class="info-table__key">Pincode</td><td>250001</td></tr>
+              <tr><td class="info-table__key">Email</td><td>apansirohi@gmail.com</td></tr>
             </tbody>
           </table>
         </div>
       </div>
 
+      <!-- Educational -->
       <div class="accordion__item">
         <button class="accordion__trigger" aria-expanded="false" aria-controls="panel-education">
-          <span class="accordion__icon accordion__icon--education"></span>
-          <span>Educational Information</span>
-          <span class="accordion__chevron">&#9662;</span>
+          <span class="section-icon">🎓</span>
+          <span class="section-title">EDUCATIONAL INFORMATION</span>
+          <span class="accordion__chevron">⌄</span>
         </button>
+
         <div class="accordion__panel" id="panel-education" hidden>
           <table class="info-table">
             <tbody>
               <tr><td class="info-table__key">Applied Degree</td><td>UG</td></tr>
               <tr><td class="info-table__key">Educational Qualification</td><td>12th / Intermediate</td></tr>
-              <tr><td class="info-table__key">Branch / Group Studied</td><td>—</td></tr>
-              <tr><td class="info-table__key">School Name</td><td>—</td></tr>
+              <tr><td class="info-table__key">Branch / Group Studied</td><td>PCM</td></tr>
+              <tr><td class="info-table__key">School Name</td><td>Dayawati Modi Academy</td></tr>
               <tr><td class="info-table__key">Medium of Study</td><td>English</td></tr>
-              <tr><td class="info-table__key">Board / University</td><td>—</td></tr>
-              <tr><td class="info-table__key">Class Obtained</td><td>—</td></tr>
-              <tr><td class="info-table__key">Year of Passing</td><td>20XX</td></tr>
+              <tr><td class="info-table__key">Board / University</td><td>CBSE</td></tr>
+              <tr><td class="info-table__key">Class Obtained</td><td>DISTINCTION</td></tr>
+              <tr><td class="info-table__key">Year of Passing</td><td>2023</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Family -->
+      <div class="accordion__item">
+        <button class="accordion__trigger" aria-expanded="false" aria-controls="panel-family">
+          <span class="section-icon">♣</span>
+          <span class="section-title">FAMILY INFORMATION</span>
+          <span class="accordion__chevron">⌄</span>
+        </button>
+
+        <div class="accordion__panel" id="panel-family" hidden>
+          <table class="info-table">
+            <tbody>
+              <tr><td class="info-table__key">Father's Name</td><td>ASHISH SIROHI</td></tr>
+              <tr><td class="info-table__key">Mother's Name</td><td>CHETNA SIROHI</td></tr>
+              <tr><td class="info-table__key">Father's Mobile Number</td><td>9837400622</td></tr>
+              <tr><td class="info-table__key">Mother's Mobile Number</td><td>9837129601</td></tr>
+              <tr><td class="info-table__key">Parent / Guardian Email</td><td>chetna.ahan@gmail.com</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Proctor: heading only -->
+      <div class="accordion__item">
+        <button class="accordion__trigger accordion__trigger--heading-only" aria-expanded="false" aria-controls="panel-proctor">
+          <span class="section-icon">◉</span>
+          <span class="section-title">PROCTOR INFORMATION</span>
+          <span class="accordion__chevron">⌄</span>
+        </button>
+        <div class="accordion__panel empty-panel" id="panel-proctor" hidden></div>
+      </div>
+
+      <!-- Hostel -->
+      <div class="accordion__item">
+        <button class="accordion__trigger" aria-expanded="false" aria-controls="panel-hostel">
+          <span class="section-icon">⌂</span>
+          <span class="section-title">HOSTEL INFORMATION</span>
+          <span class="accordion__chevron">⌄</span>
+        </button>
+
+        <div class="accordion__panel" id="panel-hostel" hidden>
+          <table class="info-table">
+            <tbody>
+              <tr><td class="info-table__key">Application Number</td><td>2023022283</td></tr>
+              <tr><td class="info-table__key">Register Number</td><td>23BCE10832</td></tr>
+              <tr><td class="info-table__key">Block Name</td><td>MENS HOSTEL BLOCK I PHASE-B (BOYS HOSTEL - Block )</td></tr>
+              <tr><td class="info-table__key">Room No.</td><td>B 211</td></tr>
+              <tr><td class="info-table__key">Bed Type</td><td>3- BED -NANF</td></tr>
+              <tr><td class="info-table__key">Mess Information</td><td>VEG-FOOD SUTHRA</td></tr>
             </tbody>
           </table>
         </div>
       </div>
 
     </section>
-
   </main>
 
   <script src="js/script.js"></script>
